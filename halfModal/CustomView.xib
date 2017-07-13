@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView">
+            <connections>
+                <outlet property="label" destination="M1m-1x-MY6" id="vVB-h5-lyt"/>
+                <outlet property="textField" destination="g15-eJ-wyf" id="gjH-zo-skg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1m-1x-MY6">
+                    <rect key="frame" x="8" y="24" width="359" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g15-eJ-wyf">
+                    <rect key="frame" x="8" y="69" width="359" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="g15-eJ-wyf" secondAttribute="trailing" id="3de-aJ-fPm"/>
+                <constraint firstItem="g15-eJ-wyf" firstAttribute="top" secondItem="M1m-1x-MY6" secondAttribute="bottom" constant="24" id="efu-vx-tit"/>
+                <constraint firstAttribute="trailingMargin" secondItem="M1m-1x-MY6" secondAttribute="trailing" id="fmg-dG-ZYo"/>
+                <constraint firstItem="M1m-1x-MY6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="gOk-Yi-IXj"/>
+                <constraint firstItem="g15-eJ-wyf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="lWb-Es-Hfy"/>
+                <constraint firstItem="M1m-1x-MY6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="mp3-61-wg9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="141.5"/>
+        </view>
+    </objects>
+</document>
